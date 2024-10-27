@@ -1,0 +1,82 @@
+{
+  "groups": [
+    {
+      "name": "minio",
+      "type": "com.zyh.market.constants.MinioProp",
+      "sourceType": "com.zyh.market.constants.MinioProp"
+    },
+    {
+      "name": "security",
+      "type": "com.zyh.market.properties.SecurityProperties",
+      "sourceType": "com.zyh.market.properties.SecurityProperties"
+    },
+    {
+      "name": "zhufan.alioss",
+      "type": "com.zyh.market.properties.AliOssProperties",
+      "sourceType": "com.zyh.market.properties.AliOssProperties"
+    },
+    {
+      "name": "zhufan.app",
+      "type": "com.zyh.market.properties.ZhuFanProperties",
+      "sourceType": "com.zyh.market.properties.ZhuFanProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "minio.accesskey",
+      "type": "java.lang.String",
+      "sourceType": "com.zyh.market.constants.MinioProp"
+    },
+    {
+      "name": "minio.bucket",
+      "type": "java.lang.String",
+      "sourceType": "com.zyh.market.constants.MinioProp"
+    },
+    {
+      "name": "minio.endpoint",
+      "type": "java.lang.String",
+      "sourceType": "com.zyh.market.constants.MinioProp"
+    },
+    {
+      "name": "minio.secret-key",
+      "type": "java.lang.String",
+      "sourceType": "com.zyh.market.constants.MinioProp"
+    },
+    {
+      "name": "security.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zyh.market.properties.SecurityProperties"
+    },
+    {
+      "name": "zhufan.alioss.access-key-id",
+      "type": "java.lang.String",
+      "sourceType": "com.zyh.market.properties.AliOssProperties"
+    },
+    {
+      "name": "zhufan.alioss.access-key-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.zyh.market.properties.AliOssProperties"
+    },
+    {
+      "name": "zhufan.alioss.bucket-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zyh.market.properties.AliOssProperties"
+    },
+    {
+      "name": "zhufan.alioss.endpoint",
+      "type": "java.lang.String",
+      "sourceType": "com.zyh.market.properties.AliOssProperties"
+    },
+    {
+      "name": "zhufan.app.logo-path",
+      "type": "java.lang.String",
+      "sourceType": "com.zyh.market.properties.ZhuFanProperties"
+    },
+    {
+      "name": "zhufan.app.share-url",
+      "type": "java.lang.String",
+      "sourceType": "com.zyh.market.properties.ZhuFanProperties"
+    }
+  ],
+  "hints": []
+}
