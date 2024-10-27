@@ -8,11 +8,11 @@ spring:
     name: reuse_market
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://47.238.210.25:3306/reuse_market?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://*:3306/reuse_market?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: reuse_market # 本地环境为root
-    password: ywb123456
+    password: ~~~~~~
   redis:
-    host: 47.238.210.25
+    host: ~~~~~~
     # 数据库索引
     database: 2
     # 端口
@@ -24,10 +24,10 @@ spring:
         max-wait: 100
     password: '123456'
   rabbitmq:
-    host: 47.238.210.25
+    host: ~~~~~~
     port: 5672
-    username: admin
-    password: ywb123456
+    username: ~~~~~~
+    password: ~~~~~~
     connection-timeout: 2s
     virtual-host: /admin
     template:
@@ -51,13 +51,13 @@ spring:
       max-file-size: 10MB
       max-request-size: 10MB
 gitee:
-  client-id: add767928f212b3ff889314b25176a2020b7a69b0ecd21dad945a8a05a148cff
-  client-secret: eb4d78b8a3a85d032273c2b3028fe699291484b8a85d30e2a09b6f89138777a7
-  redirect-uri: http://www.ycowokb.top/public/giteeCallback
+  client-id: ~~~~~~
+  client-secret: ~~~~~~
+  redirect-uri: ~~~~~~
 github:
-  client-id: Ov23lilXTsR2b3Y9qUuB
-  client-secret: d58be6fe7297478b58731adb786cef226cf771c5
-  redirect-uri: http://www.ycowokb.top/public/githubCallback
+  client-id: ~~~~~~
+  client-secret: ~~~~~~
+  redirect-uri: ~~~~~~
 sa-token:
   # token名称 (同时也是cookie名称)
   token-name: token
@@ -81,12 +81,12 @@ zhufan:
   # 项目配置
   app:
     logoPath: "/root/LOGO.png"
-    shareUrl: http://www.ycowokb.top:8080/#/login/register?code=
+    shareUrl: ~~~~~~
   alioss:
-    endpoint: oss-cn-hangzhou.aliyuncs.com #https://oss-cn-hangzhou.aliyuncs.com
-    access-key-id: LTAI5tHqpRC4TX91ihjQFq84 #LTAI5tHqpRC4TX91ihjQFq84
-    access-key-secret: T6by5xEB1wJNk0iVHyZFRwNq29v09x #T6by5xEB1wJNk0iVHyZFRwNq29v09x
-    bucket-name: web-itheima-ywb #web-itheima-ywb
+    endpoint: ~~~~~~
+    access-key-id: ~~~~~~
+    access-key-secret: ~~~~~~
+    bucket-name: ~~~~~~
 #文件上传管理X-File-Storage
 dromara:
   x-file-storage: #文件存储配置
@@ -96,18 +96,14 @@ dromara:
     qiniu-kodo:
       - platform: qiniu-kodo-1 # 存储平台标识
         enable-storage: true  # 启用存储
-        access-key: dVmrnp8j0HO_3MlHFR7QuysV8l62rmELN6sf1Dca
-        secret-key: 3rB9wU6mhdeT9GuHn087jYUJx-5yKLDfl_hkAYb_
+        access-key: ~~~~~~
+        secret-key: ~~~~~~
         bucket-name: cookmarket
-        domain: http://sii2btw3l.hd-bkt.clouddn.com/ # 访问域名，注意“/”结尾，例如：https://abc.oss-cn-shanghai.aliyuncs.com/
+        domain: ~~~~~~ # 访问域名，注意“/”结尾，例如：https://abc.oss-cn-shanghai.aliyuncs.com/
         base-path: reuse-market-images/ # 基础路径
 alipay:
-  appId: 9021000139679206
-  appPrivateKey: MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCPDXnHGLFwJyVUCvbaF47hOWzcaVU+DfX/+9EIZ3Uw+eaS0lQHx9Q3p60MWEZkYibP+KWTGI1XT19sksyuWGNCkLCochAwNnYDOCEclYukG8V4se46hi0f8y2r8RxMtuDzNEf1OkYze/n1Qp3UvQA1xK+b3RyHXcLQP/7frZYBPNwqYeenpIsB2CmOZsMa2pV+86F0Kb+8P5idjvLGL7od4mTe02ggL/P6IEjvpxaYnyHs+El/m32nWfDvYeItcob2TUf/+jPIvILABlxwFOs3nfuA5bWd0Crf9G5EdBAknoddDnHVyeg+l4ChbKac36nGaL2z/OeB1VPJIaTa2dqjAgMBAAECggEAAOATO62iAE6tAsuiYQk93ZDtYpfeZqfNNojC6atAY1FUINfancWSPdjvzSCJJboYBLO/x5uh2cPpkI+BYxu1V8Xs3sr74F+k7zYbtcIQfauR1MA59e+2PPjO8bti8fE4hSRvwEdgAJakm+SRdKjHZIzUij6bGxTuyTlrBNFaFp3XXozuTVZpBebF9uBz6sL88Kb/jN2tvqL/pxNEsr+tgk+Agxz492JFIw4Dg87pjWwLihhNOvC09gP0XDSL/iMIV2j5i2cWW80NY9NyIQv2NfrKeIgKvnUtA/7/rgcrvVP4EfM/tVassoy5MQjtRHJ/JtIletukDT5BLM20f36A2QKBgQDKgCQ5OUG/G8P9qQ9g0KxJAePQwNNxNNpAsaYN0hddYoq1pvl8q/asdByAGUTSTcaB51Gq+rrCWh4zyNFtJM9tEj4VeoXTRKGTXqekbEyC/PsDjcBZBCwu5SHImAwYMuBFfi5+3/jf7q/tOn6aSVdS1v/gEQNKGk5aMMoxzzErJQKBgQC02KcctCfVRpuZSU3whFYR/CTA07/kWjuplw1tj6Atf1NULAzw+Nxg2jAb8ZAAaHhALA54suISTUmLQMxXOw4MM6hxe3mi+zl04m61JY9svDtCb/IdFEPr6PA4fUJzeejGtdA0+q3lsfM7dOYxwNmsR1Gw8g9g1H+vgMwVthyoJwKBgFDOYaYUGxBP3B3U4LYZjyZzAp3C1J1QIee+/Cx3sasqL3/daaE+XejjTJwxeS0SrCwaSpSYCP6VR4gSkr+i+MLljLC1e8GamX9dPjh2nvGGUgRRBHiBGcB83sZVJj5hzuzsNVGbvoxdiwZ3WR3oNlhwQxr+rvlbFfkXjxfhPhWhAoGACvXmivLQRzjUTWIH+z/KB6UEhTtQMgLWAt1Izw8ZYiiJYFybHC+5C5WtvMPTOnMadqk051PQJ9PPVUVEHTVTEKJA3z/gi2Q2g0MF+qygGLL/1HL8dY643x9rD8FnuZ/137U9PTjEOVujpkLbgMBzcOGRreu9ytyWMIjZ1acH7ZkCgYAhkLBFowuymHSGEYaSUEosy+xalvHZMWTZtDoUzL/tkwJSf6v5gQiQlR33azsALCK+vghyhmv9ld/TDUDeImSvXlV4PsU2qWPObFoJvLwymGfuhwzqptRa8Y8F4pqDXZGgJNdWDhHBTS3qSfOz9yMXoOmUeiQVKSL0fWDFjOW0yw==
-  alipayPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjMLrc86ZK+lQ5+y7qDN9bECZhB7dNYOCmWlq9pPH61qGHgJYt4OVnzQ5TeuxtMMCPHyFBoHaVRBWl3a5se79GSRs5LUUsz5MJuDoRBoyTbiNZzvWvPYPru5WEIKOyJEyCj9L1qv8/9I6u5616F7q7XrtDC+SjH96D5AYwMtXw33L+jWdqqIP0QDSlXGUU2yFGtBxkwSDCYV2TfNM6NCovUS7MZ8eDGxqzReCGNmypoQBqnnnKvQOjVYPnOjXurmSUYag8jwYSp50oJau9EyJz0EAv37MzaXBgyJPB2hvp3rqbPUagD15AQoz8H27IHBAVNQbtlhh1IG4p2/e1J4PGwIDAQAB
-  notifyUrl: http://3ed51192.r29.cpolar.top/alipay/notify
-  returnUrl: http://localhost:8080/#/paymentPay?paymentOrderId=
-#xxl:
+  appId: ~~~~~~
+  appPrivateKey: ~~~~~~
 # job:
 #   accessToken: ywb123456
 #   admin:
